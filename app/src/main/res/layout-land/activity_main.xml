@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/welcomeMainLayout.land"
+    tools:context="com.olgazelenko.nycquiz.MainActivity">
+
+    <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+        style="@style/roundCornerMain.welcomeLand"
+        app:corner_radius="@dimen/radius_content">
+
+        <LinearLayout
+            android:id="@+id/logo"
+            style="@style/logoLayout.blackLand">
+
+            <TextView
+                android:id="@+id/nyc_text"
+                style="@style/logoTextLarge.black" />
+
+            <TextView
+                android:id="@+id/quiz_text"
+                style="@style/logoTextSmall.black" />
+
+        </LinearLayout>
+    </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/welcomeMainLayout.layoutTextLand">
+
+        <LinearLayout
+            android:id="@+id/welcomeTxt"
+            style="@style/welcomeMainLayout.horizontalText">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/welcomeMainLayout.textView"
+                android:text="@string/welcome_to" />
+
+            <TextView
+                style="@style/welcomeMainLayout.textView.yellow"
+                android:text="@string/nyc_quiz" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/welcomeMainLayout.textViewAlpaLand"
+            android:text="@string/lets_see" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/editTextLand" />
+
+        <Button
+            android:id="@+id/start"
+            style="@style/startButton"
+            android:onClick="start" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
